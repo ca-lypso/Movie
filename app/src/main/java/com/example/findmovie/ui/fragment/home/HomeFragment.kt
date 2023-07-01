@@ -13,8 +13,9 @@ import com.example.findmovie.R
 import com.example.findmovie.databinding.FragmentHomeBinding
 import com.example.findmovie.ui.adapter.MovieAdapter
 import com.example.findmovie.ui.adapter.MovieClickListener
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private val viewModel by viewModels<HomeViewModel>()
